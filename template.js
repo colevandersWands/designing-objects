@@ -23,6 +23,9 @@ console.log('--- develop manipulations as pure functions ---');
   }
   // test_function(add_player, add_player_tests)
 
+  // ADD THIS: get player by name
+  // ADD THIS: get player by number
+
   function remove_player_by_name(roster, player_name) {
     const new_roster = JSON.parse(JSON.stringify(roster));
     delete new_roster[name]
@@ -65,6 +68,8 @@ console.log('--- objectify & method-test ---');
     set_roster: function (new_roster) {
       this.roster = JSON.parse(JSON.stringify(new_roster))
     },
+    // ADD THIS: get player by name
+    // ADD THIS: get player by number
     add_player: function (player_obj) {
         this.roster[player_obj.name] = JSON.parse(JSON.stringify(player_obj))
         delete this.roster[player_obj.name].name
