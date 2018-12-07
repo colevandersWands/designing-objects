@@ -1,0 +1,4 @@
+at this stage, methods do not call each other
+
+if you chunk out a method while developing it in pure
+  no biggie, just paste the chunks inside the method
